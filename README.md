@@ -1,1 +1,34 @@
-# earnmore2023
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Earn More</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+   <nav class="navbar">
+   <a href="profile.html" class="logo">
+   <img src="profile.jpg" alt="MAMI" class="logo-img">
+</a>
+
+    <div class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="gratitude.html" class="nav-link">Gratitude</a>
+    </div>
+</nav>
+
+    <!-- MAIN CARD -->
+    <div class="card">
+        <h1>Would You Like To Earn?</h1>
+        <p>
+            You have already earned our respect, love, trust, and more! You are one of the best parts that came into our lives. An amazing person we met this year, you are truly loved by us—Mami Sabb, whom we first met as Mami Che. Keep grinding! Sending you hugs and warm greetings.
+        </p>
+        <div class="footer">
+            — From ChandJen🧡
+        </div>
+    </div>
+
+</body>
+</html>
