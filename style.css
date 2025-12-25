@@ -1,0 +1,362 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: #FFE5CC; /* pastel orange */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* NAVBAR */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #FFB37A;
+    padding: 14px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    z-index: 100;
+}
+
+.logo-img {
+    width: 45px;     
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover; 
+    background-color: rgb(255, 255, 255);
+    padding: 2px 2px;
+}
+.logo-img:hover{
+      transform: scale(1.05); /* slightly bigger */
+    transition: transform 0.3s ease;
+}
+
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-link {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+}
+.nav-link:hover{
+    padding: 4px 10px;
+    background-color: #FFE5CC;
+    color: #FF8C42;
+    border-radius: 8px;
+
+}
+
+/* CARD (Home Page) */
+.card {
+    margin-top: 100px; /* space for navbar */
+    background-color: #FFF7F0;
+    padding: 60px 50px;
+    border-radius: 14px;
+    text-align: center;
+    max-width: 500px;
+    width: 90%;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #FF8C42;
+    margin-bottom: 15px;
+    font-size: 32px;
+}
+
+p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.footer {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #888;
+}
+
+/* MESSAGES PAGE */
+.messages-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 120px; /* space for navbar */
+    flex-wrap: wrap;
+    width: 90%;
+    max-width: 1000px;
+}
+
+.message-card {
+    background-color: #FFF7F0;
+    padding: 30px 25px;
+    border-radius: 14px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    flex: 1 1 400px; /* responsive width */
+    max-width: 450px;
+}
+
+.message-card h2 {
+    color: #FF8C42;
+    margin-bottom: 12px;
+}
+
+.message-card p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.message-card .date {
+    display: block;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #888;
+    text-align: right;
+}
+
+/* MOBILE VIEW */
+@media (max-width: 600px) {
+    .navbar {
+        padding: 12px 20px;
+    }
+
+    .logo {
+        font-size: 18px;
+    }
+
+    .nav-link {
+        font-size: 16px;
+    }
+
+    .card {
+        padding: 28px 24px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    .footer {
+        font-size: 13px;
+    }
+
+    .messages-container {
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 100px;
+    }
+
+    .message-card {
+        padding: 20px 18px;
+    }
+
+    .message-card p {
+        font-size: 15px;
+    }
+
+    .message-card .date {
+        font-size: 13px;
+    }
+}
+
+
+/* PROFILE PAGE */
+.profile-section {
+    margin-top: 120px; /* space for navbar */
+    background-color: #FFF7F0;
+    padding: 40px 30px;
+    border-radius: 14px;
+    text-align: center;
+    max-width: 500px;
+    width: 90%;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 3px solid #FFB37A;
+}
+
+.profile-section h1 {
+    color: #FF8C42;
+    margin: 8px 0;
+}
+
+.profile-section h3 {
+    color: #555;
+    margin: 4px 0 20px 0;
+    font-weight: 500;
+}
+
+.profile-section .bio {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.contact-link {
+    color: #FF8C42;
+    text-decoration: none;
+    font-weight: 600;
+    border: 1px solid #FF8C42;
+    padding: 6px 12px;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+}
+
+.contact-link:hover {
+    background-color: #FFB37A;
+    color: #fff;
+    border-color: #FFB37A;
+}
+
+.profile-section .quote {
+    color: #FF8C42;
+    font-style: italic;
+    font-size: 15px;
+}
+
+/* MOBILE VIEW */
+@media (max-width: 600px) {
+    .profile-section {
+        padding: 28px 20px;
+        margin-top: 100px;
+    }
+
+    .profile-pic {
+        width: 100px;
+        height: 100px;
+    }
+
+    .profile-section .bio {
+        font-size: 15px;
+    }
+
+    .contact-link {
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+
+    .profile-section .quote {
+        font-size: 14px;
+    }
+}
+
+/* MESSAGE SECTION - Elegant Design */
+.message-section {
+    margin-top: 40px;
+    width: 90%;
+    max-width: 650px;
+    text-align: center;
+}
+
+.message-section h2 {
+    color: #FF8C42;
+    font-size: 28px;
+    margin-bottom: 25px;
+    font-weight: 700;
+    border-bottom: 2px solid #FFB37A;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.message-card-profile {
+    background-color: #FFF0E0; /* slightly warmer than previous */
+    padding: 35px 30px;
+    border-radius: 20px; /* softer, more elegant corners */
+    box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+    text-align: left;
+    line-height: 1.8;
+    position: relative;
+}
+
+/* Decorative quotation marks */
+.message-card-profile::before {
+    content: "“";
+    font-size: 50px;
+    color: #FFB37A;
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    font-family: serif;
+    font-weight: bold;
+}
+
+.message-card-profile::after {
+    content: "”";
+    font-size: 50px;
+    color: #FFB37A;
+    position: absolute;
+    bottom: -10px;
+    right: 20px;
+    font-family: serif;
+    font-weight: bold;
+}
+
+.message-card-profile .message-title {
+    font-weight: 700;
+    color: #FF8C42;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.message-card-profile p {
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #555;
+}
+
+/* MOBILE VIEW */
+@media (max-width: 600px) {
+    .message-section h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .message-card-profile {
+        padding: 25px 20px;
+    }
+
+    .message-card-profile::before,
+    .message-card-profile::after {
+        font-size: 35px;
+    }
+
+    .message-card-profile .message-title {
+        font-size: 18px;
+    }
+
+    .message-card-profile p {
+        font-size: 15px;
+    }
+}
+
